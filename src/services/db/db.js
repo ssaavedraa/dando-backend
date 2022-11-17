@@ -14,8 +14,6 @@ const db = getFirestore(app)
 
 const createDocument = async (db, key, data) => await setDoc(doc(db, 'simulations', key), data)
 
-console.log(firebaseConfig)
-
 module.exports = {
   db,
   createDocument
